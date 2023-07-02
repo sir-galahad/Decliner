@@ -1,0 +1,8 @@
+## Interface: 49345
+## Title: Decliner
+## Notes: Stick Around
+## Version: 0.1
+## SavedVariablesPerCharacter: QuestsToDecline
+## Author: Phobowarrior
+
+Decliner.lua
