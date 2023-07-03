@@ -71,26 +71,21 @@ SlashCmdList["DEC"] = function(msg)
 	elseif args[1] == "list" then
 		for questID, questName in pairs(QuestsToDecline) do
 			print(questName, " = ", questID)
-			return
 		end
 	elseif args[1] == "remove" then
 		if args[2] == nil then
 			print("Which quest id did you want to remove?")
-			return
 		end
 		questID = tonumber(args[2])
 		if questID == nil then
 			print("QuestID must be numeric")
-		
 		end
 		if QuestsToDecline[questID] ~= nil then
 			questName = QuestsToDecline[questID]
 			QuestsToDecline[questID]=nil
 			print("\"", questName, "\" will no longer be autodeclined")
-			return
 		else
 			print("questID (", args[2],") not found in autodecline list")
-			return
 		end
 	else
 		print("use `/decliner help` to see available commands")
